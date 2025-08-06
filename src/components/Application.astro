@@ -53,7 +53,8 @@
       <div class="form-section">
         <div class="form-container">
           <h3>Formulario de Aplicación</h3>
-          <form action="https://formspree.io/f/xwpkgzpn" method="POST" class="application-form">
+          <form name="scholarship-application" method="POST" data-netlify="true" action="/thank-you" class="application-form">
+            <input type="hidden" name="form-name" value="scholarship-application" />
             <div class="form-group">
               <label for="student-name">Nombre completo del estudiante *</label>
               <input type="text" id="student-name" name="student-name" required>

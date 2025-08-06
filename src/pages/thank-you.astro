@@ -1,0 +1,108 @@
+---
+---
+
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="generator" content={Astro.generator} />
+  <title>¡Gracias! - Fundación DAADIOS</title>
+  <style>
+    :root {
+      --color-primary: #2563eb;
+      --color-white: #ffffff;
+      --color-dark: #1f2937;
+      --color-gray: #6b7280;
+      --spacing-xl: 2rem;
+      --spacing-lg: 1.5rem;
+      --spacing-md: 1rem;
+      --border-radius-lg: 1rem;
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .thank-you-container {
+      background: var(--color-white);
+      padding: var(--spacing-xl);
+      border-radius: var(--border-radius-lg);
+      box-shadow: var(--shadow-lg);
+      text-align: center;
+      max-width: 500px;
+      margin: var(--spacing-lg);
+    }
+    
+    .success-icon {
+      width: 80px;
+      height: 80px;
+      background: #10b981;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto var(--spacing-lg);
+      color: white;
+      font-size: 2rem;
+    }
+    
+    h1 {
+      color: var(--color-dark);
+      margin-bottom: var(--spacing-md);
+      font-size: 2rem;
+    }
+    
+    p {
+      color: var(--color-gray);
+      line-height: 1.6;
+      margin-bottom: var(--spacing-lg);
+    }
+    
+    .btn {
+      background: var(--color-primary);
+      color: var(--color-white);
+      padding: var(--spacing-md) var(--spacing-xl);
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-block;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+    
+    .btn:hover {
+      background: #1d4ed8;
+    }
+  </style>
+</head>
+<body>
+  <div class="thank-you-container">
+    <div class="success-icon">✓</div>
+    <h1>¡Gracias por tu solicitud!</h1>
+    <p>
+      Hemos recibido tu aplicación para el programa de becas de la Fundación DAADIOS. 
+      Nuestro equipo revisará tu información y se pondrá en contacto contigo pronto.
+    </p>
+    <p>
+      <strong>Próximos pasos:</strong><br>
+      • Revisaremos tu solicitud<br>
+      • Te contactaremos para coordinar la entrevista<br>
+      • No olvides preparar los documentos requeridos
+    </p>
+    <a href="/" class="btn">Volver al inicio</a>
+  </div>
+</body>
+</html>
