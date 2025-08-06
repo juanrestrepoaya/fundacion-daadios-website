@@ -44,27 +44,6 @@ npm run dev
 - `npm run preview` - Previsualiza la build de producción
 - `npm run astro` - Ejecuta comandos de Astro CLI
 
-## 📁 Estructura del Proyecto
-
-```
-src/
-├── components/
-│   ├── BaseLayout.astro     # Layout base con estilos globales
-│   ├── Header.astro         # Navegación principal
-│   ├── Hero.astro          # Sección hero principal
-│   ├── About.astro         # Sección "Quiénes somos"
-│   ├── Services.astro      # Servicios de la fundación
-│   ├── Scholarship.astro   # Información del programa de becas
-│   ├── Application.astro   # Formulario de aplicación
-│   └── Footer.astro        # Pie de página
-└── pages/
-    └── index.astro         # Página principal
-
-public/
-├── favicon.svg             # Favicon personalizado
-├── daadios-logo.svg       # Logo principal
-└── daadios-symbol.svg     # Símbolo del árbol
-```
 
 ## 🎯 Secciones del Sitio
 
@@ -145,22 +124,3 @@ El sitio está optimizado para:
 ## � Licencia
 
 Este proyecto está bajo la Licencia MIT. Ver el archivo LICENSE para más detalles.
-
-## 🤝 Contribuir
-
-1. Fork el proyecto
-2. Crea tu rama de feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
-
-## 📞 Contacto
-
-**Fundación DAADIOS**
-- Email: progbecas@fundaciondaadios.org
-- WhatsApp: 7233-7973
-- Dirección: San Antonio de Escazú, 200 metros norte del CTP
-
----
-
-*Transformando vidas a través de la educación* 🌱
