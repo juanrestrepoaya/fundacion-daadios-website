@@ -1,0 +1,192 @@
+---
+---
+
+<section id="servicios" class="services section">
+  <div class="container">
+    <h2 class="section-title">Nuestros Servicios</h2>
+    <p class="section-subtitle">
+      En Fundación DAADIOS, brindamos acompañamiento integral a jóvenes de 
+      secundaria en situación de vulnerabilidad, asegurando que tengan las 
+      herramientas necesarias para continuar sus estudios y desarrollar su máximo potencial.
+    </p>
+    
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 1L13 3L14 4L13 5L11 3L13 1L12 0L8 4V6L14 12L16 10L21 15V17L19 19L17 17V15L11 9L5 15V17L7 19L9 17V19L11 21H13L17 17L21 13V11L19 9H21Z" fill="currentColor"/>
+          </svg>
+        </div>
+        <h3>Apoyo Económico para la Educación</h3>
+        <p>
+          Otorgamos becas que cubren gastos esenciales como transporte, uniformes, útiles 
+          escolares, alimentación y colegiaturas. Esto permite que los estudiantes puedan 
+          enfocarse en su formación académica sin que las limitaciones económicas 
+          representen una barrera.
+        </p>
+        <ul class="service-features">
+          <li>Subsidio de transporte</li>
+          <li>Materiales escolares y uniformes</li>
+          <li>Útiles escolares</li>
+          <li>Apoyo alimentario</li>
+        </ul>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 21.35L10.55 20.03C5.4 15.36 2 12.28 2 8.5C2 5.42 4.42 3 7.5 3C9.24 3 10.91 3.81 12 5.09C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.42 22 8.5C22 12.28 18.6 15.36 13.45 20.04L12 21.35Z" fill="currentColor"/>
+          </svg>
+        </div>
+        <h3>Acompañamiento Emocional y Familiar</h3>
+        <p>
+          Contamos con profesionales en psicología y trabajo social que brindan atención a 
+          los estudiantes y sus familias, promoviendo un entorno emocionalmente sano, con 
+          herramientas para afrontar los retos del crecimiento y la adolescencia.
+        </p>
+        <ul class="service-features">
+          <li>Acompañamiento psicológico</li>
+          <li>Asesoría académica y seguimiento</li>
+          <li>Apoyo familiar integral</li>
+          <li>Orientación vocacional</li>
+        </ul>
+      </div>
+      
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 3L1 9L12 15L21 10.09V17H23V9M5 13.18V17.18L12 21L19 17.18V13.18L12 17L5 13.18Z" fill="currentColor"/>
+          </svg>
+        </div>
+        <h3>Formación Complementaria y Desarrollo Personal</h3>
+        <p>
+          Ofrecemos talleres, mentorías, actividades recreativas y espacios de formación en 
+          habilidades blandas, liderazgo, organización del tiempo, salud mental, derechos 
+          humanos y más, con el fin de empoderar a los jóvenes para que construyan un 
+          futuro con propósito.
+        </p>
+        <ul class="service-features">
+          <li>Talleres de desarrollo personal</li>
+          <li>Actividades culturales y recreativas</li>
+          <li>Formación en liderazgo</li>
+          <li>Habilidades blandas</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .services.section {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  @media (max-width: 768px) {
+    .services.section {
+      padding-left: 6px;
+      padding-right: 6px;
+    }
+  }
+  .services {
+    background: var(--color-white);
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-xl);
+    margin-top: var(--spacing-xl);
+  }
+  
+  .service-card {
+    background: var(--color-white);
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+    border: 1px solid var(--color-light-gray);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-yellow));
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .service-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-yellow));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-white);
+  }
+  
+  .service-icon svg {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .service-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-dark);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.3;
+  }
+  
+  .service-card p {
+    color: var(--color-gray);
+    line-height: 1.6;
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .service-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .service-features li {
+    padding: var(--spacing-xs) 0;
+    color: var(--color-dark);
+    position: relative;
+    padding-left: var(--spacing-lg);
+  }
+  
+  .service-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--color-primary);
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .services-grid {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-lg);
+    }
+    
+    .service-card {
+      padding: var(--spacing-lg);
+    }
+  }
+</style>

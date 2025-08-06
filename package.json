@@ -1,0 +1,26 @@
+{
+  "name": "fundacion-daadios",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Página web oficial de la Fundación DAADIOS - Transformando vidas a través de la educación",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^5.12.8"
+  },
+  "keywords": [
+    "fundacion",
+    "educacion",
+    "becas",
+    "escazu",
+    "costa-rica",
+    "astro"
+  ],
+  "author": "Fundación DAADIOS",
+  "license": "MIT"
+}

@@ -1,0 +1,25 @@
+<svg viewBox="0 0 200 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Tree symbol based on the brand guidelines -->
+  <g transform="translate(100, 125)">
+    <!-- Main trunk -->
+    <path d="M-8 50 Q-8 80 -6 120 Q-4 140 0 150 Q4 140 6 120 Q8 80 8 50" fill="#F58220" stroke="#C15E20" stroke-width="1"/>
+    
+    <!-- Left leaf -->
+    <path d="M-45 -20 Q-65 -40 -70 -60 Q-75 -80 -65 -90 Q-50 -95 -35 -85 Q-20 -75 -15 -60 Q-10 -45 -20 -30 Q-30 -15 -45 -20" fill="#FFC20E"/>
+    
+    <!-- Top leaf -->
+    <path d="M-10 -80 Q-20 -100 -15 -120 Q-10 -140 5 -145 Q20 -140 25 -120 Q30 -100 20 -80 Q10 -60 -5 -65 Q-10 -70 -10 -80" fill="#FFC20E"/>
+    
+    <!-- Right top leaf -->
+    <path d="M25 -50 Q45 -70 65 -75 Q85 -80 95 -65 Q100 -50 85 -35 Q70 -20 50 -15 Q30 -10 20 -25 Q15 -40 25 -50" fill="#F58220"/>
+    
+    <!-- Right bottom leaf -->
+    <path d="M30 10 Q50 -5 70 0 Q90 5 95 20 Q90 35 70 40 Q50 35 35 25 Q25 15 30 10" fill="#F58220"/>
+    
+    <!-- Branch lines -->
+    <path d="M-8 50 Q-25 35 -35 20" stroke="#C15E20" stroke-width="2" fill="none"/>
+    <path d="M-8 40 Q-15 25 -10 10" stroke="#C15E20" stroke-width="2" fill="none"/>
+    <path d="M8 30 Q25 15 35 0" stroke="#C15E20" stroke-width="2" fill="none"/>
+    <path d="M8 50 Q20 35 30 20" stroke="#C15E20" stroke-width="2" fill="none"/>
+  </g>
+</svg>

@@ -1,0 +1,219 @@
+---
+---
+
+<header class="header">
+  <nav class="nav">
+    <div class="container">
+      <div class="nav-content">
+        <div class="nav-logo">
+          <a href="#inicio">
+            <img src="/IMAGOTIPO_HORIZONTAL_COLOR.png" alt="Fundación DAADIOS" class="logo">
+          </a>
+        </div>
+        
+        <div class="nav-menu" id="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#inicio" class="nav-link">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#nosotros" class="nav-link">Sobre Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a href="#servicios" class="nav-link">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a href="#becas" class="nav-link">Programa de Becas</a>
+            </li>
+            <li class="nav-item">
+              <a href="#aplicar" class="nav-link">Aplicar</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contacto" class="nav-link">Contacto</a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="nav-toggle" id="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<style>
+  .header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--color-white);
+    box-shadow: var(--shadow-sm);
+    z-index: 1000;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--spacing-sm) 12px;
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+  }
+  
+  .nav-logo .logo {
+    height: 50px;
+    width: auto;
+  }
+  
+  .nav-list {
+    display: flex;
+    list-style: none;
+    gap: var(--spacing-md);
+    margin: 0;
+    padding: 0;
+    flex-wrap: nowrap;
+    min-width: 0;
+    
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: var(--color-dark);
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+    white-space: nowrap;
+    font-size: 0.9rem;
+  }
+  
+  .nav-link:hover {
+    color: var(--color-primary);
+  }
+  
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--color-primary);
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
+  
+  .nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+  }
+  
+  .nav-toggle span {
+    width: 25px;
+    height: 3px;
+    background: var(--color-dark);
+    transition: all 0.3s ease;
+  }
+  
+  /* Responsive adjustments for medium screens */
+  @media (max-width: 1024px) {
+    .nav-content {
+      padding-left: 6px;
+      padding-right: 6px;
+    }
+    .nav-list {
+      gap: var(--spacing-xs);
+      overflow-x: auto;
+    }
+    .nav-link {
+      font-size: 0.85rem;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .nav-menu {
+      position: fixed;
+      top: 70px;
+      left: -100%;
+      width: 100%;
+      background: var(--color-white);
+      box-shadow: var(--shadow-md);
+      transition: left 0.3s ease;
+      padding: var(--spacing-lg) 0;
+    }
+    
+    .nav-menu.active {
+      left: 0;
+    }
+    
+    .nav-list {
+      flex-direction: column;
+      align-items: center;
+      gap: var(--spacing-md);
+    }
+    
+    .nav-link {
+      font-size: 1rem;
+    }
+    
+    .nav-toggle {
+      display: flex;
+    }
+    
+    .nav-toggle.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .nav-toggle.active span:nth-child(2) {
+      opacity: 0;
+    }
+    
+    .nav-toggle.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(7px, -6px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .nav-menu {
+      top: 65px;
+    }
+  }
+</style>
+
+<script>
+  // Mobile menu toggle
+  const navToggle = document.getElementById('nav-toggle');
+  const navMenu = document.getElementById('nav-menu');
+  
+  navToggle?.addEventListener('click', () => {
+    navMenu?.classList.toggle('active');
+    navToggle?.classList.toggle('active');
+  });
+  
+  // Close menu when clicking on a link
+  document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+      navMenu?.classList.remove('active');
+      navToggle?.classList.remove('active');
+    });
+  });
+  
+  // Header scroll effect
+  window.addEventListener('scroll', () => {
+    const header = document.querySelector('.header');
+    if (window.scrollY > 100) {
+      header?.classList.add('scrolled');
+    } else {
+      header?.classList.remove('scrolled');
+    }
+  });
+</script>

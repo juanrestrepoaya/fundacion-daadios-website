@@ -1,0 +1,251 @@
+---
+---
+
+<footer id="contacto" class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <div class="footer-logo">
+          <img src="/IMAGOTIPO_HORIZONTAL_WH.png" alt="Fundación DAADIOS" class="logo">
+          <p class="footer-description">
+            Transformando vidas a través de la educación. Abriendo caminos, 
+            sembrando oportunidades y construyendo un futuro más justo.
+          </p>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Contacto</h3>
+        <div class="contact-info">
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22S19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9S10.62 6.5 12 6.5 14.5 7.62 14.5 9 13.38 11.5 12 11.5Z" fill="currentColor"/>
+            </svg>
+            <div>
+              <strong>Dirección</strong>
+              <p>San Antonio de Escazú<br>200 metros norte del CTP</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z" fill="currentColor"/>
+            </svg>
+            <div>
+              <strong>Email</strong>
+              <p>progbecas@fundaciondaadios.org</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.01 15.38C18.78 15.38 17.59 15.18 16.48 14.82C16.13 14.7 15.74 14.79 15.47 15.06L13.9 17.03C11.07 15.68 8.42 13.13 7.01 10.2L8.96 8.54C9.23 8.26 9.31 7.87 9.2 7.52C8.83 6.41 8.64 5.22 8.64 3.99C8.64 3.45 8.19 3 7.65 3H4.19C3.65 3 3 3.24 3 3.99C3 13.28 10.73 21 20.01 21C20.72 21 21 20.37 21 19.82V16.37C21 15.83 20.55 15.38 20.01 15.38Z" fill="currentColor"/>
+            </svg>
+            <div>
+              <strong>WhatsApp</strong>
+              <p>7233-7973</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Enlaces Rápidos</h3>
+        <ul class="footer-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Sobre Nosotros</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#becas">Programa de Becas</a></li>
+          <li><a href="#aplicar">Aplicar</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Horarios de Atención</h3>
+        <div class="schedule">
+          <div class="schedule-item">
+            <strong>Lunes a Viernes</strong>
+            <p>8:00 AM - 5:00 PM</p>
+          </div>
+          <div class="schedule-item">
+            <strong>Sábados</strong>
+            <p>8:00 AM - 12:00 PM</p>
+          </div>
+          <div class="schedule-item">
+            <strong>Domingos</strong>
+            <p>Cerrado</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <div class="footer-bottom-content">
+        <p>&copy; 2025 Fundación DAADIOS. Todos los derechos reservados.</p>
+        <div class="footer-actions">
+          <a href="#aplicar" class="btn btn-primary btn-small">Aplicar Beca</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 3rem;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  @media (max-width: 768px) {
+    .footer {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }
+  .footer {
+    background: linear-gradient(135deg, var(--color-dark) 0%, #34495e 100%);
+    color: var(--color-white);
+    padding: var(--spacing-xxl + 10px);
+  }
+  
+  .footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: var(--spacing-xl);
+    margin-bottom: var(--spacing-xl);
+  }
+  
+  .footer-section h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-lg);
+    color: var(--color-white);
+  }
+  
+  .footer-logo .logo {
+    height: 60px;
+    width: auto;
+    margin-bottom: var(--spacing-md);
+    filter: brightness(0) invert(1);
+  }
+  
+  .footer-description {
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin: 0;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .contact-item svg {
+    width: 20px;
+    height: 20px;
+    color: var(--color-primary);
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  
+  .contact-item > div {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .contact-item strong {
+    color: var(--color-white);
+    display: block;
+    margin-bottom: var(--spacing-xs);
+  }
+  
+  .contact-item p {
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    line-height: 1.4;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
+    hyphens: auto;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .footer-links a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: var(--color-primary);
+  }
+  
+  .schedule {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+  
+  .schedule-item strong {
+    color: var(--color-white);
+    display: block;
+  }
+  
+  .schedule-item p {
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: var(--spacing-lg) 0;
+  }
+  
+  .footer-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-bottom p {
+    color: rgba(255, 255, 255, 0.6);
+    margin: 0;
+  }
+  
+  .btn-small {
+    padding: var(--spacing-xs) var(--spacing-md);
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-lg);
+    }
+    
+    .footer-bottom-content {
+      flex-direction: column;
+      gap: var(--spacing-md);
+      text-align: center;
+    }
+  }
+</style>

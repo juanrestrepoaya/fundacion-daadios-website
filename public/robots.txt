@@ -1,0 +1,11 @@
+# Robots.txt para Fundación DAADIOS
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://fundaciondaadios.org/sitemap.xml
+
+# Disallow unnecessary files
+Disallow: /api/
+Disallow: /*.json$

@@ -1,0 +1,17 @@
+{
+  "name": "Fundación DAADIOS",
+  "short_name": "DAADIOS",
+  "description": "Transformando vidas a través de la educación",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F58220",
+  "theme_color": "#F58220",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

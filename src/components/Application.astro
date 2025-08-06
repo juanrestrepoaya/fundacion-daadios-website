@@ -1,0 +1,474 @@
+---
+---
+
+<section id="aplicar" class="application section">
+  <div class="container">
+    <h2 class="section-title">¿Cómo Aplicar?</h2>
+    <p class="section-subtitle">
+      Sigue estos sencillos pasos para aplicar a nuestro programa de becas
+    </p>
+    
+    <div class="application-content">
+      <div class="steps-section">
+        <h3>Pasos para Aplicar</h3>
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h4>Completar Formulario</h4>
+              <p>Completa el formulario de solicitud disponible en formato físico o digital.</p>
+            </div>
+          </div>
+          
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h4>Reunir Documentos</h4>
+              <p>Prepara todos los documentos requeridos según la lista proporcionada.</p>
+            </div>
+          </div>
+          
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h4>Participar en Entrevista</h4>
+              <p>Asiste a la entrevista de selección junto con tu encargado legal.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="documents-required">
+          <h4>Documentos Requeridos</h4>
+          <ul class="documents-list">
+            <li>Boleta de calificaciones del último año y primer semestre del año presente</li>
+            <li>Recibo de agua o luz (para validar residencia)</li>
+            <li>Carta de recomendación de un docente o encargado del centro educativo</li>
+            <li>Fotocopia de cédula del estudiante o menor</li>
+            <li>Fotocopia de cédula del encargado legal</li>
+            <li>Comprobante de ingresos o constancia de situación económica</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="form-section">
+        <div class="form-container">
+          <h3>Formulario de Aplicación</h3>
+          <form action="https://formspree.io/f/xwpkgzpn" method="POST" class="application-form">
+            <div class="form-group">
+              <label for="student-name">Nombre completo del estudiante *</label>
+              <input type="text" id="student-name" name="student-name" required>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="student-id">Cédula del estudiante *</label>
+                <input type="text" id="student-id" name="student-id" required>
+              </div>
+              <div class="form-group">
+                <label for="birth-date">Fecha de nacimiento *</label>
+                <input type="date" id="birth-date" name="birth-date" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="guardian-name">Nombre del encargado legal *</label>
+              <input type="text" id="guardian-name" name="guardian-name" required>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="guardian-id">Cédula del encargado *</label>
+                <input type="text" id="guardian-id" name="guardian-id" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Teléfono *</label>
+                <input type="tel" id="phone" name="phone" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Correo electrónico *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="address">Dirección exacta en Escazú *</label>
+              <textarea id="address" name="address" rows="3" required></textarea>
+            </div>
+            
+            <div class="form-group">
+              <label for="school">Centro educativo *</label>
+              <input type="text" id="school" name="school" required>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="grade">Nivel académico actual *</label>
+                <select id="grade" name="grade" required>
+                  <option value="">Seleccionar...</option>
+                  <option value="7mo">7mo año</option>
+                  <option value="8vo">8vo año</option>
+                  <option value="9no">9no año</option>
+                  <option value="10mo">10mo año</option>
+                  <option value="11vo">11vo año</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="average">Promedio general *</label>
+                <input type="number" id="average" name="average" min="80" max="100" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="economic-situation">Descripción de la situación económica familiar *</label>
+              <textarea id="economic-situation" name="economic-situation" rows="4" required placeholder="Describe brevemente la situación económica que amerita la beca..."></textarea>
+            </div>
+            
+            <div class="form-group">
+              <label for="goals">Metas y aspiraciones académicas</label>
+              <textarea id="goals" name="goals" rows="3" placeholder="Comparte tus metas académicas y profesionales..."></textarea>
+            </div>
+            
+            <div class="form-group checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="terms" required>
+                <span class="checkmark"></span>
+                Acepto los términos y condiciones del programa de becas *
+              </label>
+            </div>
+            
+            <div class="form-group checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="data-treatment" required>
+                <span class="checkmark"></span>
+                Autorizo el tratamiento de mis datos personales según la política de privacidad *
+              </label>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-full">Enviar Solicitud</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <div class="contact-info">
+      <h3>¿Dónde entregar la documentación?</h3>
+      <div class="contact-methods">
+        <div class="contact-method">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22S19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9S10.62 6.5 12 6.5 14.5 7.62 14.5 9 13.38 11.5 12 11.5Z" fill="currentColor"/>
+            </svg>
+          </div>
+          <div>
+            <h4>Oficinas DAADIOS</h4>
+            <p>San Antonio de Escazú, 200 metros norte del CTP</p>
+          </div>
+        </div>
+        
+        <div class="contact-method">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z" fill="currentColor"/>
+            </svg>
+          </div>
+          <div>
+            <h4>Correo Electrónico</h4>
+            <p>progbecas@fundaciondaadios.org</p>
+          </div>
+        </div>
+        
+        <div class="contact-method">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.01 15.38C18.78 15.38 17.59 15.18 16.48 14.82C16.13 14.7 15.74 14.79 15.47 15.06L13.9 17.03C11.07 15.68 8.42 13.13 7.01 10.2L8.96 8.54C9.23 8.26 9.31 7.87 9.2 7.52C8.83 6.41 8.64 5.22 8.64 3.99C8.64 3.45 8.19 3 7.65 3H4.19C3.65 3 3 3.24 3 3.99C3 13.28 10.73 21 20.01 21C20.72 21 21 20.37 21 19.82V16.37C21 15.83 20.55 15.38 20.01 15.38Z" fill="currentColor"/>
+            </svg>
+          </div>
+          <div>
+            <h4>WhatsApp</h4>
+            <p>7233-7973</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .application.section {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  @media (max-width: 768px) {
+    .application.section {
+      padding-left: 6px;
+      padding-right: 6px;
+    }
+  }
+  .application {
+    background: var(--color-white);
+  }
+  
+  .application-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-xxl);
+    margin-bottom: var(--spacing-xxl);
+  }
+  
+  .steps-section h3,
+  .form-section h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--color-dark);
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+  }
+  
+  .steps {
+    margin-bottom: var(--spacing-xl);
+  }
+  
+  .step {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .step-number {
+    width: 40px;
+    height: 40px;
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    flex-shrink: 0;
+  }
+  
+  .step-content h4 {
+    color: var(--color-dark);
+    margin-bottom: var(--spacing-xs);
+    font-weight: 600;
+  }
+  
+  .step-content p {
+    color: var(--color-gray);
+    line-height: 1.5;
+  }
+  
+  .documents-required {
+    background: var(--color-light-gray);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+  }
+  
+  .documents-required h4 {
+    color: var(--color-dark);
+    margin-bottom: var(--spacing-md);
+    font-weight: 600;
+  }
+  
+  .documents-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .documents-list li {
+    padding: var(--spacing-xs) 0;
+    color: var(--color-dark);
+    position: relative;
+    padding-left: var(--spacing-lg);
+    line-height: 1.5;
+  }
+  
+  .documents-list li::before {
+    content: '📄';
+    position: absolute;
+    left: 0;
+  }
+  
+  .form-container {
+    background: var(--color-light-gray);
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+  }
+  
+  .application-form {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+  }
+  
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-weight: 500;
+    color: var(--color-dark);
+    margin-bottom: var(--spacing-xs);
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    padding: var(--spacing-sm);
+    border: 2px solid #ddd;
+    border-radius: var(--border-radius);
+    font-family: var(--font-primary);
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+  }
+  
+  .checkbox-group {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--spacing-sm);
+  }
+  
+  .checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    cursor: pointer;
+    margin: 0;
+  }
+  
+  .checkbox-label input[type="checkbox"] {
+    margin: 0;
+    width: auto;
+  }
+  
+  .btn-full {
+    width: 100%;
+    padding: var(--spacing-md);
+    font-size: 1.1rem;
+    margin-top: var(--spacing-md);
+  }
+  
+  .contact-info {
+    background: var(--color-light-gray);
+    padding: var(--spacing-xl);
+    border-radius: var(--border-radius-lg);
+    text-align: center;
+  }
+  
+  .contact-info h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-dark);
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .contact-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+    align-items: stretch;
+  }
+  
+  .contact-method {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    background: var(--color-white);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-sm);
+    min-width: 0;
+    flex: 1;
+  }
+  
+  .contact-icon {
+    width: 50px;
+    height: 50px;
+    background: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    flex-shrink: 0;
+  }
+  
+  .contact-icon svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .contact-method > div:last-child {
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+  }
+  
+  .contact-method h4 {
+    color: var(--color-dark);
+    margin-bottom: var(--spacing-xs);
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  
+  .contact-method p {
+    color: var(--color-gray);
+    margin: 0;
+    line-height: 1.4;
+  
+    hyphens: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .application-content {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-lg);
+    }
+    
+    .form-row {
+      grid-template-columns: 1fr;
+    }
+    
+    .form-container {
+      padding: var(--spacing-lg);
+    }
+    
+    .contact-methods {
+      grid-template-columns: 1fr;
+      gap: var(--spacing-md);
+    }
+    
+    .contact-method {
+      padding: var(--spacing-md);
+      align-items: flex-start;
+    }
+    
+    .contact-method p {
+      font-size: 0.9rem;
+    }
+  }
+</style>
