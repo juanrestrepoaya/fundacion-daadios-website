@@ -7,7 +7,6 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "build:hosting": "astro build && echo Sitio listo para 506 Hosting en carpeta dist/",
     "preview": "astro preview",
     "astro": "astro"
   },
