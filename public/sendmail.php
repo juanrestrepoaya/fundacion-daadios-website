@@ -1,6 +1,6 @@
 <?php
 // Configuración
-$to = 'tu-correo@tudominio.com'; // Cambia esto por tu correo
+$to = 'juandiegorestrepoaya@gmail.com'; // Cambia esto por tu correo
 $subject = 'Nueva solicitud desde el formulario web';
 
 // Sanitizar y obtener datos del formulario
