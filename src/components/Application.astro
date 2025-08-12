@@ -53,100 +53,58 @@
       <div class="form-section">
         <div class="form-container">
           <h3>Formulario de Aplicación</h3>
-          <form action="https://formspree.io/f/YOUR_NEW_FORM_ID" method="POST" class="application-form">
-            <div class="form-group">
-              <label for="student-name">Nombre completo del estudiante *</label>
-              <input type="text" id="student-name" name="student-name" required>
-            </div>
-            
+          <div class="application-form">
             <div class="form-row">
               <div class="form-group">
-                <label for="student-id">Cédula del estudiante *</label>
-                <input type="text" id="student-id" name="student-id" required>
+                <label for="nombre">Nombre *</label>
+                <input type="text" id="nombre" name="nombre" required>
               </div>
               <div class="form-group">
-                <label for="birth-date">Fecha de nacimiento *</label>
-                <input type="date" id="birth-date" name="birth-date" required>
+                <label for="apellido">Apellido *</label>
+                <input type="text" id="apellido" name="apellido" required>
               </div>
             </div>
-            
-            <div class="form-group">
-              <label for="guardian-name">Nombre del encargado legal *</label>
-              <input type="text" id="guardian-name" name="guardian-name" required>
-            </div>
-            
             <div class="form-row">
               <div class="form-group">
-                <label for="guardian-id">Cédula del encargado *</label>
-                <input type="text" id="guardian-id" name="guardian-id" required>
+                <label for="email">Correo electrónico *</label>
+                <input type="email" id="email" name="email" required>
               </div>
               <div class="form-group">
-                <label for="phone">Teléfono *</label>
-                <input type="tel" id="phone" name="phone" required>
+                <label for="telefono">Número telefónico *</label>
+                <input type="tel" id="telefono" name="telefono" required>
               </div>
             </div>
-            
-            <div class="form-group">
-              <label for="email">Correo electrónico *</label>
-              <input type="email" id="email" name="email" required>
-            </div>
-            
-            <div class="form-group">
-              <label for="address">Dirección exacta en Escazú *</label>
-              <textarea id="address" name="address" rows="3" required></textarea>
-            </div>
-            
-            <div class="form-group">
-              <label for="school">Centro educativo *</label>
-              <input type="text" id="school" name="school" required>
-            </div>
-            
-            <div class="form-row">
-              <div class="form-group">
-                <label for="grade">Nivel académico actual *</label>
-                <select id="grade" name="grade" required>
-                  <option value="">Seleccionar...</option>
-                  <option value="7mo">7mo año</option>
-                  <option value="8vo">8vo año</option>
-                  <option value="9no">9no año</option>
-                  <option value="10mo">10mo año</option>
-                  <option value="11vo">11vo año</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="average">Promedio general *</label>
-                <input type="number" id="average" name="average" min="80" max="100" required>
-              </div>
-            </div>
-            
-            <div class="form-group">
-              <label for="economic-situation">Descripción de la situación económica familiar *</label>
-              <textarea id="economic-situation" name="economic-situation" rows="4" required placeholder="Describe brevemente la situación económica que amerita la beca..."></textarea>
-            </div>
-            
-            <div class="form-group">
-              <label for="goals">Metas y aspiraciones académicas</label>
-              <textarea id="goals" name="goals" rows="3" placeholder="Comparte tus metas académicas y profesionales..."></textarea>
-            </div>
-            
-            <div class="form-group checkbox-group">
-              <label class="checkbox-label">
-                <input type="checkbox" name="terms" required>
-                <span class="checkmark"></span>
-                Acepto los términos y condiciones del programa de becas *
-              </label>
-            </div>
-            
-            <div class="form-group checkbox-group">
-              <label class="checkbox-label">
-                <input type="checkbox" name="data-treatment" required>
-                <span class="checkmark"></span>
-                Autorizo el tratamiento de mis datos personales según la política de privacidad *
-              </label>
-            </div>
-            
-            <button type="submit" class="btn btn-primary btn-full">Enviar Solicitud</button>
-          </form>
+            <button type="button" class="btn btn-primary btn-full" onclick="enviarCorreo()">Enviar</button>
+          </div>
+          <script>
+            function enviarCorreo() {
+              const nombreInput = document.getElementById('nombre');
+              const apellidoInput = document.getElementById('apellido');
+              const emailInput = document.getElementById('email');
+              const telefonoInput = document.getElementById('telefono');
+              if (!nombreInput || !apellidoInput || !emailInput || !telefonoInput) {
+                alert('Por favor completa todos los campos.');
+                return;
+              }
+              const nombre = (nombreInput as HTMLInputElement).value;
+              const apellido = (apellidoInput as HTMLInputElement).value;
+              const email = (emailInput as HTMLInputElement).value;
+              const telefono = (telefonoInput as HTMLInputElement).value;
+              const destinatario = 'juandiegorestrepoaya@gmail.com';
+              const asunto = encodeURIComponent('Solicitud de información - Fundación DAADIOS');
+              const cuerpo = encodeURIComponent(
+                `Hola, estoy interesado en la fundación. Acá está mi información:%0A%0A` +
+                `Nombre: ${nombre}%0A` +
+                `Apellido: ${apellido}%0A` +
+                `Correo electrónico: ${email}%0A` +
+                `Número telefónico: ${telefono}`
+              );
+              window.location.href = `mailto:${destinatario}?subject=${asunto}&body=${cuerpo}`;
+              setTimeout(() => {
+                alert('¡Gracias! Si tu correo se abrió correctamente, por favor revisa y envíalo para completar tu aplicación.');
+              }, 500);
+            }
+          </script>
         </div>
       </div>
     </div>
