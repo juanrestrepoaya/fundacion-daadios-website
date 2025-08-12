@@ -8,5 +8,5 @@ deployment:
     - /usr/local/bin/npm install
     - /bin/echo "Construyendo el sitio Astro..."
     - /usr/local/bin/npm run build
-    - /bin/echo "Sincronizando archivos a homex/fundacio/deploy..."
-    - /usr/bin/rsync -a --delete dist/ ~homex/fundacio/deploy/
+  - /bin/echo "Sincronizando archivos a public_html..."
+  - /usr/bin/rsync -a --delete dist/ ~/public_html/
