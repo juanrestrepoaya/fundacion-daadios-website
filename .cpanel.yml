@@ -1,0 +1,12 @@
+---
+# cPanel deployment configuration for Astro
+# Documentación: https://docs.cpanel.net/knowledge-base/web-services/how-to-set-up-git-version-control/
+
+deployment:
+  tasks:
+    - /bin/echo "Instalando dependencias..."
+    - /usr/local/bin/npm install
+    - /bin/echo "Construyendo el sitio Astro..."
+    - /usr/local/bin/npm run build
+    - /bin/echo "Sincronizando archivos a public_html..."
+    - /usr/bin/rsync -a --delete dist/ ~/public_html/
