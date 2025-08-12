@@ -53,11 +53,11 @@
       <div class="form-section">
         <div class="form-container">
           <h3>Formulario de Aplicación</h3>
-          <div class="application-form">
+          <form class="application-form" action="/sendmail.php" method="POST">
             <div class="form-row">
               <div class="form-group">
                 <label for="nombre">Nombre *</label>
-                <input type="text" id="nombre" name="nombre" required>
+                <input type="text" id="nombre" name="name" required>
               </div>
               <div class="form-group">
                 <label for="apellido">Apellido *</label>
@@ -74,41 +74,8 @@
                 <input type="tel" id="telefono" name="telefono" required>
               </div>
             </div>
-            <button type="button" class="btn btn-primary btn-full" onclick="enviarCorreo()">Enviar</button>
-          </div>
-          <script>
-            function enviarCorreo() {
-              const nombreInput = document.getElementById('nombre');
-              const apellidoInput = document.getElementById('apellido');
-              const emailInput = document.getElementById('email');
-              const telefonoInput = document.getElementById('telefono');
-              if (!nombreInput || !apellidoInput || !emailInput || !telefonoInput) {
-                alert('Por favor completa todos los campos.');
-                return;
-              }
-              const nombre = (nombreInput as HTMLInputElement).value;
-              const apellido = (apellidoInput as HTMLInputElement).value;
-              const email = (emailInput as HTMLInputElement).value;
-              const telefono = (telefonoInput as HTMLInputElement).value;
-              const destinatario = 'juandiegorestrepoaya@gmail.com';
-              const asunto = encodeURIComponent('Solicitud de información - Fundación DAADIOS');
-              const cuerpo = encodeURIComponent(
-                `Hola, estoy interesado en la fundación. Acá está mi información:%0A%0A` +
-                `Nombre: ${nombre}%0A` +
-                `Apellido: ${apellido}%0A` +
-                `Correo electrónico: ${email}%0A` +
-                `Número telefónico: ${telefono}`
-              );
-              window.location.href = `mailto:${destinatario}?subject=${asunto}&body=${cuerpo}`;
-              setTimeout(() => {
-                alert('¡Gracias! Si tu correo se abrió correctamente, por favor revisa y envíalo para completar tu aplicación.');
-              }, 500);
-            }
-          </script>
-        </div>
-      </div>
-    </div>
-    
+            <button type="submit" class="btn btn-primary btn-full">Enviar</button>
+          </form>
     <div class="contact-info">
       <h3>¿Dónde entregar la documentación?</h3>
       <div class="contact-methods">
